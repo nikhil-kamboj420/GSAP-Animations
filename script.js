@@ -138,13 +138,11 @@ gsap.from(".a", {
   delay: 0.2,
   y: 50,
   stagger: 0.2,
-  ease: "steps(12)",
   scrollTrigger: {
     trigger: ".a",
     start: "top 90%",
     end: "top 30%",
     scroller: "body",
-    markers : true
   },
 });
 gsap.from(".b", {
@@ -153,7 +151,6 @@ gsap.from(".b", {
   opacity: 0,
   y: 50,
   stagger: -0.2,
-  ease: "steps(12)",
   scrollTrigger: {
     trigger: ".b",
     start: "top 90%",
