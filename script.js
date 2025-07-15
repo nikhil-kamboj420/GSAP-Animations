@@ -30,20 +30,19 @@ tl.to("#animateBox", {
   ease: "power2.out",
 });
 
-tl.to("#animateBox", {
+tl.from("#animateBox", {
   content: "",
-  margin: "auto",
-  maxWidth: "50vw",
-  height: "50vh",
+  maxWidth: "0",
+  height: "0",
   borderRadius: "3rem",
-  position: "relative",
-  top: "20%",
+  y : -200,
   ease: "power2.out",
   duration: 1,
+  opacity: 1,
 });
 
 gsap.from("#page1 .box", {
-  duration: 1,
+  duration: 0.1,
   rotation: 360,
   scale: 0,
   y: 100,
@@ -61,7 +60,7 @@ gsap.to("#page2 h2", {
     trigger: "#page2",
     scroller: "body",
     start: "top 0%",
-    end: "top -100%",
+    end: "top -130%",
     scrub: 2,
     pin: true,
   },
